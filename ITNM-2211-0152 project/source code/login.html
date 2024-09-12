@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IM Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <title>IM PET Shop</title>
+    
+        <ul class="navbar">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+            
+        </ul>
+       
+    
+    </header>
+
+    
+    
+
+    <form id="loginForm" action="/" method="get">
+        <h1>Login</h1>
+        <div class="input-field">
+            <input id="username" type="text" name="username" placeholder="Username" required />
+            <div class="error-txt" id="usernameError" style="display:none;">Username can't be blank</div>
+        </div>
+        <div class="input-field">
+            <input id="password" type="password" name="password" placeholder="Password" required />
+            <div class="error-txt" id="passwordError" style="display:none;">Password can't be blank</div>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

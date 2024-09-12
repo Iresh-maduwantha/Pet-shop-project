@@ -1,0 +1,217 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+/* Resetting default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+hader {
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 0; /* Padding around the nav bar */
+}
+
+.header-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #b13535;
+    border-bottom: 1px solid rgb(41, 161, 161);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+
+.navbar {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the nav items */
+}
+
+.navbar li {
+    margin: 0 20px; /* Spacing between items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #361717; /* White text color */
+    font-size: 18px; /* Font size for the links */
+    display: block; /* Make the links block level for padding */
+    padding: 10px 15px; /* Padding around the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+}
+
+.navbar a:hover {
+    background-color: #92dd4c; /* Slightly lighter background on hover */
+    color: #f0f0f0; /* Lighter text color on hover */
+}
+
+/* Optional: Add an underline animation effect on hover */
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f0f0f0; /* Underline color */
+    transition: width 0.3s;
+    margin-top: 5px; /* Space between text and underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  --space: 2rem;
+
+  display: grid;
+  align-content: center;
+  overflow: hidden;
+  gap: var(--space);
+  width: 100%;
+  font-family: "Corben", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.marquee {
+  --duration: 60s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  transform: skewY(-3deg);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__group img {
+  max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.marquee__group p {
+  background-image: linear-gradient(
+    75deg,
+    hsl(240deg 70% 49%) 0%,
+    hsl(253deg 70% 49%) 11%,
+    hsl(267deg 70% 49%) 22%,
+    hsl(280deg 71% 48%) 33%,
+    hsl(293deg 71% 48%) 44%,
+    hsl(307deg 71% 48%) 56%,
+    hsl(320deg 71% 48%) 67%,
+    hsl(333deg 72% 48%) 78%,
+    hsl(347deg 72% 48%) 89%,
+    hsl(0deg 73% 47%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}

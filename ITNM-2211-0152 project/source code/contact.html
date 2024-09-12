@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IM Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script type="text/javascript" src="contact.js" defer></script>
+</head>
+<body>
+<header>
+    <ul class="navbar">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <div class="header-icon">
+        <i class='bx bx-file-find'></i>
+        <i class='bx bxs-cart'></i>
+    </div>
+
+    <div class="search-box">
+        <input type="search" placeholder="Search Here...">
+    </div>
+</header>
+
+
+    
+
+<section class="contact">
+    <h2>CONTACT US</h2>
+
+    <form id="contact-form">
+        <div class="input-field field">
+            <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+            <div class="error-txt"></div>
+        </div>
+        <div class="input-field field">
+            <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+            <div class="error-txt"></div>
+        </div>
+        <div class="input-field field">
+            <input type="tel" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+            <div class="error-txt"></div>
+        </div>
+        <div class="input-field field">
+            <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+            <div class="error-txt"></div>
+        </div>
+
+        <div class="textarea-field field">
+            <textarea id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+            <div class="error-txt"></div>
+        </div>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="contact.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

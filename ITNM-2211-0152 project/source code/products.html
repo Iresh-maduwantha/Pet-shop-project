@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="">products.js</script>
+    
+</head>
+<body>
+    <header>
+        <h1>Pet Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Our Products</h2>
+        <div class="filter">
+            <label for="category">Select Category:</label>
+            <select id="category" onchange="navigateToCategory()">
+                <option value="all">All Categories</option>
+                <option value="dog-food">Dog Food</option>
+                <option value="cat-food">Cat Food</option>
+                <option value="dog-accessories">Dog Accessories</option>
+                <option value="supplements">Supplements</option>
+            </select>
+        </div>
+        
+        <section class="product-container" id="product-container">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="dog-food">
+                <img src="dog_food.jpg" alt="Dog Food">
+                <h3>Dog Food</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart('Dog Food', 29.99)">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card" data-category="cat-food">
+                <img src="cat_food.jpg" alt="Cat Food">
+                <h3>Cat Food</h3>
+                <p>$24.99</p>
+                <button onclick="addToCart('Cat Food', 24.99)">Add to Cart</button>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card" data-category="dog-accessories">
+                <img src="dog_leash.jpg" alt="Dog Leash">
+                <h3>Dog Leash</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart('Dog Leash', 19.99)">Add to Cart</button>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card" data-category="supplements">
+                <img src="vitamins.jpg" alt="Vitamins">
+                <h3>Vitamins</h3>
+                <p>$39.99</p>
+                <button onclick="addToCart('Vitamins', 39.99)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Shop</p>
+    </footer>
+
+    <script src="prodcuts.js"></script>
+</body>
+</html>
+
+

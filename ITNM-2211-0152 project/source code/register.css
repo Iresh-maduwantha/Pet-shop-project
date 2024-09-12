@@ -1,0 +1,246 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+/* Resetting default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+hader {
+    background-color: #333; /* Dark background for the header */
+    padding: 10px 0; /* Padding around the nav bar */
+}
+
+.header-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #add;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+#search-input {
+    padding: 8px;
+    border: 1px solid#812222;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: whitesmoke;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color:#f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #31a063;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+
+.navbar {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the nav items */
+}
+
+.navbar li {
+    margin: 0 20px; /* Spacing between items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #916565; /* White text color */
+    font-size: 18px; /* Font size for the links */
+    display: block; /* Make the links block level for padding */
+    padding: 10px 15px; /* Padding around the text */
+
+}
+
+.navbar a:hover {
+    background-color: #92dd4c; /* Slightly lighter background on hover */
+    color: #f0f0f0; /* Lighter text color on hover */
+}
+
+/* Optional: Add an underline animation effect on hover */
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f0f0f0; /* Underline color */
+    transition: width 0.3s;
+    margin-top: 5px; /* Space between text and underline */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-section {
+    margin-bottom: 30px; /* Space between the forms */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-section {
+    margin-bottom: 30px; /* Space between the forms */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+

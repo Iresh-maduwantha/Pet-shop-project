@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IM Pet Shop</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script type="text/javascript" src="register.js" defer></script>
+</head>
+<body>
+<header>
+    <ul class="navbar">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="login.html">login</a></li>
+    </ul>
+    <div class="header-actions">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+        <button id="chart-button">
+            <i class='bx bx-chart'></i> Chart
+        </button>
+        <button id="shopping-button">Shopping Today</button>
+    </div>
+</header>
+
+<main>
+    <div class="form-container">
+        <!-- Login Form -->
+        <div class="form-section" id="login-section">
+            <h2>Login</h2>
+            <form id="login-form" action="login.php" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        
+        <!-- Signup Form -->
+        <div class="form-section" id="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form" action="signup.php" method="post">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="username" required>
+                
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script src="register.js" defer></script>
+</body>
+</html>
+write a php code for connect data base for this form and write step by step ho to it
